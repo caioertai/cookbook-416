@@ -10,7 +10,7 @@ class Controller
     @view = view
   end
 
-  def remove_recipe
+  def destroy
     # ASK COOKBOOK for the recipes
     recipes = @cookbook.all
     # ASK VIEW to display them
@@ -21,14 +21,14 @@ class Controller
     @cookbook.remove(chosen_index)
   end
 
-  def list_recipes
+  def list
     # ASK COOKBOOK for the recipes
     recipes = @cookbook.all
     # ASK VIEW to display them
     @view.display_recipes(recipes)
   end
 
-  def add_recipe
+  def create
     # ASK VIEW for a name
     recipe_name = @view.ask_for_text("name")
     # ASK VIEW for a description

@@ -9,7 +9,7 @@ class Cookbook
     load_csv
   end
 
-  def add(new_recipe)
+  def add_recipe(new_recipe)
     # new_recipe # => an instance of Recipe
     @recipes << new_recipe
     update_csv
@@ -19,7 +19,7 @@ class Cookbook
     @recipes
   end
 
-  def remove(index)
+  def remove_recipe(index)
     @recipes.delete_at(index)
     update_csv
   end
