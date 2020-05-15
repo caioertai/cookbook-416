@@ -1,3 +1,3 @@
 - [x] List recipes
 - [x] Add recipes
-- [ ] Delete recipe
+- [x] Delete recipe
